@@ -2,7 +2,7 @@
 
 Get Me Pizza is a social tipping full stack application built during the Moralis x Google Defining Defi Hackathon and Chainlink hackthon.
 
-https://getme.pizza
+https://Pizza_Park.pizza
 
 Core Features:
 

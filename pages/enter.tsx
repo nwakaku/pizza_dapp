@@ -30,8 +30,8 @@ export default function Enter() {
   // 2. user signed in, but missing username <UsernameForm />
   // 3. user signed in, has username <SignOutButton />
   return (
-    <main className=' flex flex-col min-h-[calc(100vh-163px)] font-CircularMedium '>
-      <div className='mx-auto text-center mt-20 lg:max-w-5xl lg:mx-auto'>
+    <main className=" flex flex-col min-h-[calc(100vh-163px)] font-CircularMedium ">
+      <div className="mx-auto text-center mt-20 lg:max-w-5xl lg:mx-auto">
         {user ? (
           !username ? (
             <UsernameForm />
@@ -42,7 +42,7 @@ export default function Enter() {
           <SignInButton username />
         )}
       </div>
-      <div className='mt-auto'>
+      <div className="mt-auto">
         <Footer />
       </div>
     </main>
@@ -65,7 +65,7 @@ function SignInButton(username) {
   return (
     <>
       <button
-        className=' bg-white rounded-full text-lg  py-2 px-8 text-center lg:inline hover:text-xl hover:scale-105 transition-all dark:text-black'
+        className=" bg-white rounded-full text-lg  py-2 px-8 text-center lg:inline hover:text-xl hover:scale-105 transition-all dark:text-black"
         onClick={signInWithGoogle}
       >
         Sign in with{" "}
@@ -86,11 +86,11 @@ function UsernameMessage({ username, isValid, loading, userNameIsEmpty }) {
   if (loading) {
     return <p>Checking...</p>;
   } else if (isValid) {
-    return <p className='text-green-600'>{username} is available!</p>;
+    return <p className="text-green-600">{username} is available!</p>;
   } else if (username && !isValid) {
-    return <p className='text-red-500'>That username is taken!</p>;
+    return <p className="text-red-500">That username is taken!</p>;
   } else if (userNameIsEmpty) {
-    return <p className='text-red-500'>Please enter a valid username!</p>;
+    return <p className="text-red-500">Please enter a valid username!</p>;
   } else {
     return <p></p>;
   }
@@ -194,66 +194,66 @@ function UsernameForm() {
 
   return (
     !username && (
-      <section className='lg:w-[450px]'>
-        <h1 className='text-3xl mb-16'>Complete your page</h1>
-        <div className='w-16 mb-2 border-none mx-auto cursor-pointer'>
+      <section className="lg:w-[450px]">
+        <h1 className="text-3xl mb-16">Complete your page</h1>
+        <div className="w-16 mb-2 border-none mx-auto cursor-pointer">
           <div {...getRootProps()}>
             <input {...getInputProps()} />
             {isDragActive ? (
               <Image
                 width={"65px"}
                 height={"65px"}
-                className=' rounded-full border-dashed border-gray-800 dark:border-slate-300 border-2 '
+                className=" rounded-full border-dashed border-gray-800 dark:border-slate-300 border-2 "
                 src={userPhotoURL}
               />
             ) : (
-              <div className='relative'>
+              <div className="relative">
                 {userEditedPhotoURL ? (
                   <Image
                     width={"65px"}
                     height={"65px"}
-                    className=' rounded-full border-solid border-gray-800 dark:border-slate-300 border-2 '
+                    className=" rounded-full border-solid border-gray-800 dark:border-slate-300 border-2 "
                     src={userEditedPhotoURL}
                   />
                 ) : (
                   <Image
                     width={"65px"}
                     height={"65px"}
-                    className='absolute top-0  bg-white rounded-full border-solid border-gray-800 dark:border-slate-300 border-2 '
+                    className="absolute top-0  bg-white rounded-full border-solid border-gray-800 dark:border-slate-300 border-2 "
                     src={userPhotoURL}
                   />
                 )}
-                <div className='absolute top-5 left-5 p-1 bg-neutral-400 bg-opacity-80 rounded-full'>
+                <div className="absolute top-5 left-5 p-1 bg-neutral-400 bg-opacity-80 rounded-full">
                   <BiCamera />
                 </div>
               </div>
             )}
           </div>
         </div>
-        <p className=' text-xs mb-4'>Drag n drop image.</p>
-        <form className='mx-4' onSubmit={handleSubmit(onSubmit)}>
-          <h4 className='font-Montserrat mb-3 mx-2 text-left'>Name *</h4>
-          <div className='mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto'>
+        <p className=" text-xs mb-4">Drag n drop image.</p>
+        <form className="mx-4" onSubmit={handleSubmit(onSubmit)}>
+          <h4 className="font-Montserrat mb-3 mx-2 text-left">Name *</h4>
+          <div className="mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto">
             <input
-              className='w-full px-4 border-none focus:ring-0 dark:bg-zinc-800'
-              type='text'
-              placeholder='name'
+              className="w-full px-4 border-none focus:ring-0 dark:bg-zinc-800"
+              type="text"
+              placeholder="name"
               {...register("name", { required: true, maxLength: 80 })}
             />
           </div>
-          <p className='text-red-500 mx-3 text-left mb-4'>
+          <p className="text-red-500 mx-3 text-left mb-4">
             {errors.name && "Please enter a name"}
           </p>
 
-          <h4 className='font-Montserrat mb-3 mx-2 text-left'>
-            GetMe.Pizza link *
+          <h4 className="font-Montserrat mb-3 mx-2 text-left">
+            Pizza_Park.Pizza link *
           </h4>
-          <div className='mx-2 text-left py-2 px-4 rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto'>
-            <span>getme.pizza/</span>
+          <div className="mx-2 text-left py-2 px-4 rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto">
+            <span>Pizza_Park.pizza/</span>
             <input
-              className='w-[180px] border-none focus:ring-0  dark:bg-zinc-800'
-              name='username'
-              placeholder='yourname'
+              className="w-[180px] border-none focus:ring-0  dark:bg-zinc-800"
+              name="username"
+              placeholder="yourname"
               value={formValueUserName}
               onChange={onChangeUserName}
             />
@@ -265,12 +265,12 @@ function UsernameForm() {
             userNameIsEmpty={userNameIsEmpty}
           />
 
-          <h4 className='font-Montserrat mb-3 mx-2 text-left'>About *</h4>
-          <div className='mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300  lg:max-w-lg lg:mx-auto'>
+          <h4 className="font-Montserrat mb-3 mx-2 text-left">About *</h4>
+          <div className="mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300  lg:max-w-lg lg:mx-auto">
             <textarea
-              className='w-full px-4 border-none focus:ring-0 dark:bg-zinc-800'
+              className="w-full px-4 border-none focus:ring-0 dark:bg-zinc-800"
               rows={4}
-              placeholder='Hey, I just created a page here. You can now buy me a pizza with any crypto!'
+              placeholder="Hey, I just created a page here. You can now buy me a pizza with any crypto!"
               {...register("about", {
                 required: true,
                 minLength: 20,
@@ -278,54 +278,54 @@ function UsernameForm() {
               })}
             />
           </div>
-          <p className='text-red-500 mx-3 text-left mb-4'>
+          <p className="text-red-500 mx-3 text-left mb-4">
             {errors.about &&
               "Must be atleast 20 characters and less than 128 characters"}
           </p>
 
-          <h4 className='font-Montserrat mb-3 mx-2 text-left'>
+          <h4 className="font-Montserrat mb-3 mx-2 text-left">
             Website or social link *
           </h4>
-          <div className='mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto'>
+          <div className="mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto">
             <input
-              className='w-full px-4 border-none focus:ring-0 dark:bg-zinc-800'
-              type='url'
-              placeholder='https://'
+              className="w-full px-4 border-none focus:ring-0 dark:bg-zinc-800"
+              type="url"
+              placeholder="https://"
               {...register("website", { required: true, maxLength: 80 })}
             />
           </div>
-          <p className='text-red-500 mx-3 text-left mb-4'>
+          <p className="text-red-500 mx-3 text-left mb-4">
             {errors.website && "Please enter a valid link"}
           </p>
 
-          <h4 className='font-Montserrat mb-3 mx-2 text-left'>
+          <h4 className="font-Montserrat mb-3 mx-2 text-left">
             Type of creator *
           </h4>
 
-          <div className='mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300  lg:mx-auto'>
+          <div className="mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300  lg:mx-auto">
             <select
               {...register("creatorType")}
-              className='w-full px-4 border-none focus:ring-0 dark:bg-zinc-800'
+              className="w-full px-4 border-none focus:ring-0 dark:bg-zinc-800"
             >
-              <option value='Content Creator'>Content Creator</option>
-              <option value='Artist'>Artist</option>
-              <option value='Writer'>Writer</option>
-              <option value='Musician'>Musician</option>
-              <option value='Gamer'>Gamer</option>
-              <option value='Developer'>Developer</option>
-              <option value='Community'>Community</option>
-              <option value='Other'>Other</option>
+              <option value="Content Creator">Content Creator</option>
+              <option value="Artist">Artist</option>
+              <option value="Writer">Writer</option>
+              <option value="Musician">Musician</option>
+              <option value="Gamer">Gamer</option>
+              <option value="Developer">Developer</option>
+              <option value="Community">Community</option>
+              <option value="Other">Other</option>
             </select>
           </div>
 
-          <h4 className='font-Montserrat mb-3 mx-2 text-left'>
+          <h4 className="font-Montserrat mb-3 mx-2 text-left">
             EVM Address (ETH, MATIC, BSC, ETC) *
           </h4>
-          <div className='mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto'>
+          <div className="mx-2 text-center py-2  rounded-lg bg-white dark:bg-zinc-800 mb-4 text-lg border-2 border-gray-800 dark:border-slate-300 lg:max-w-lg lg:mx-auto">
             <input
-              className='w-full px-4 border-none focus:ring-0 dark:bg-zinc-800'
-              type='text'
-              placeholder='0x...'
+              className="w-full px-4 border-none focus:ring-0 dark:bg-zinc-800"
+              type="text"
+              placeholder="0x..."
               {...register("ethAddress", {
                 required: true,
                 maxLength: 64,
@@ -333,13 +333,13 @@ function UsernameForm() {
               })}
             />
           </div>
-          <p className='text-red-500 mx-3 text-left mb-4'>
+          <p className="text-red-500 mx-3 text-left mb-4">
             {errors.ethAddress && "Please enter a valid address"}
           </p>
 
           <button
-            type='submit'
-            className=' bg-yellow-300 rounded-full mt-6 py-3 min-w-full text-center md:max-w-xs md:mx-auto dark:text-black hover:scale-105 transition-all'
+            type="submit"
+            className=" bg-yellow-300 rounded-full mt-6 py-3 min-w-full text-center md:max-w-xs md:mx-auto dark:text-black hover:scale-105 transition-all"
           >
             Continue
           </button>

@@ -58,38 +58,38 @@ export default function Feed(props) {
   return (
     <>
       <Head>
-        <title>GetMe.Pizza | Feed</title>
-        <meta name='title' content='GetMe.Pizza | Feed' />
+        <title>Pizza_Park.Pizza | Feed</title>
+        <meta name="title" content="Pizza_Park.Pizza | Feed" />
         <meta
-          name='description'
-          content='View the latest feed of all the public posts on GetMe.Pizza '
+          name="description"
+          content="View the latest feed of all the public posts on Pizza_Park.Pizza "
         />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://getme.pizza/' />
-        <meta property='og:title' content='GetMe.Pizza | Feed' />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://Pizza_Park.pizza/" />
+        <meta property="og:title" content="Pizza_Park.Pizza | Feed" />
         <meta
-          property='og:description'
-          content='View the latest feed of all the public posts on GetMe.Pizza '
+          property="og:description"
+          content="View the latest feed of all the public posts on Pizza_Park.Pizza "
         />
-        <meta property='og:image' content='https://i.imgur.com/nFZLBWm.png' />
-        <meta property='twitter:card' content='summary_large_image' />
-        <meta property='twitter:url' content='https://getme.pizza/' />
-        <meta property='twitter:title' content='GetMe.Pizza | Feed' />
+        <meta property="og:image" content="https://i.imgur.com/nFZLBWm.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://Pizza_Park.pizza/" />
+        <meta property="twitter:title" content="Pizza_Park.Pizza | Feed" />
         <meta
-          property='twitter:description'
-          content='View the latest feed of all the public posts on GetMe.Pizza '
+          property="twitter:description"
+          content="View the latest feed of all the public posts on Pizza_Park.Pizza "
         />
         <meta
-          property='twitter:image'
-          content='https://i.imgur.com/nFZLBWm.png'
+          property="twitter:image"
+          content="https://i.imgur.com/nFZLBWm.png"
         />
       </Head>
-      <main className='min-h-[calc(100vh-163px)] max-w-2xl mx-auto flex flex-col justify-between'>
+      <main className="min-h-[calc(100vh-163px)] max-w-2xl mx-auto flex flex-col justify-between">
         <PostFeed posts={posts} admin={false} />
-        <div className='text-center mx-auto w-[250px]'>
+        <div className="text-center mx-auto w-[250px]">
           <button
             disabled={postsEnd || loading}
-            className=' font-CircularMedium bg-yellow-300 disabled:bg-gray-300 disabled:hover:scale-100 rounded-full mt-6 py-3 min-w-full text-center md:max-w-xs md:mx-auto dark:text-black hover:scale-105 transition-all'
+            className=" font-CircularMedium bg-yellow-300 disabled:bg-gray-300 disabled:hover:scale-100 rounded-full mt-6 py-3 min-w-full text-center md:max-w-xs md:mx-auto dark:text-black hover:scale-105 transition-all"
             onClick={getMorePosts}
           >
             {postsEnd ? (
@@ -98,9 +98,9 @@ export default function Feed(props) {
               `Load more`
             ) : (
               <>
-                <div role='status'>
-                  <GiFullPizza className='inline text-2xl animate-spin -mt-1 mr-3 text-orange-600' />
-                  <span className=''>Loading...</span>
+                <div role="status">
+                  <GiFullPizza className="inline text-2xl animate-spin -mt-1 mr-3 text-orange-600" />
+                  <span className="">Loading...</span>
                 </div>
               </>
             )}

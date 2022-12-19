@@ -114,19 +114,19 @@ export default function Dashboard({}) {
   });
 
   return (
-    <main className='min-h-[calc(100vh-163px)] flex flex-col justify-between'>
+    <main className="min-h-[calc(100vh-163px)] flex flex-col justify-between">
       <AuthCheck>
-        <div className='left-[5%] top-24 hidden lg:block lg:absolute'>
+        <div className="left-[5%] top-24 hidden lg:block lg:absolute">
           <SideNav username={username} />
         </div>
 
-        <div className='md:w-[600px] md:mx-auto '>
-          <div className='mt-8 m-5 flex justify-between '>
+        <div className="md:w-[600px] md:mx-auto ">
+          <div className="mt-8 m-5 flex justify-between ">
             <div>
-              <h2 className='font-CircularMedium '>Hello, @{username}</h2>
-              <Link className='hover:text-orange-600' href={`/${username}`}>
-                <p className='hover:text-orange-600 hover:cursor-pointer'>
-                  getme.pizza/{username}
+              <h2 className="font-CircularMedium ">Hello, @{username}</h2>
+              <Link className="hover:text-orange-600" href={`/${username}`}>
+                <p className="hover:text-orange-600 hover:cursor-pointer">
+                  Pizza_Park.pizza/{username}
                 </p>
               </Link>
             </div>
@@ -135,52 +135,52 @@ export default function Dashboard({}) {
               <button
                 onClick={() => {
                   navigator.clipboard.writeText(
-                    `https://getme.pizza/${username}`
+                    `https://Pizza_Park.pizza/${username}`
                   );
                   callShare();
                 }}
-                className='m-auto flex font-CircularMedium bg-yellow-300 rounded-full py-3 w-32 text-center md:max-w-xs md:mx-auto hover:scale-105 transition-all dark:text-black'
+                className="m-auto flex font-CircularMedium bg-yellow-300 rounded-full py-3 w-32 text-center md:max-w-xs md:mx-auto hover:scale-105 transition-all dark:text-black"
               >
-                <MdIosShare className='text-xl ml-5 mr-2' />{" "}
+                <MdIosShare className="text-xl ml-5 mr-2" />{" "}
                 {share ? "Copied!" : "Share"}
               </button>
             </div>
           </div>
           <hr />
-          <h4 className='mt-8 mx-4 font-CircularMedium text-xl text-center lg:text-left'>
+          <h4 className="mt-8 mx-4 font-CircularMedium text-xl text-center lg:text-left">
             Available to withdraw:
           </h4>
-          <div className='lg:flex  lg:justify-between '>
-            <div className='text-center lg:text-left m-5'>
-              <h4 className='font-CircularMedium '>
-                <span className='text-xs mr-2 align-bottom '>
-                  <Image width='20px' height='20px' src={BinanceLogo} />
+          <div className="lg:flex  lg:justify-between ">
+            <div className="text-center lg:text-left m-5">
+              <h4 className="font-CircularMedium ">
+                <span className="text-xs mr-2 align-bottom ">
+                  <Image width="20px" height="20px" src={BinanceLogo} />
                 </span>
                 BNB{" "}
               </h4>
-              <p className='mt-2 font-CircularMedium text-2xl'>
+              <p className="mt-2 font-CircularMedium text-2xl">
                 {earningsBinance.toFixed(5)}...
               </p>
             </div>
-            <div className='text-center lg:text-left m-5'>
-              <h4 className='font-CircularMedium '>
-                <span className='text-xs mr-2 align-bottom '>
-                  <Image width='20px' height='20px' src={PolygonLogo} />
+            <div className="text-center lg:text-left m-5">
+              <h4 className="font-CircularMedium ">
+                <span className="text-xs mr-2 align-bottom ">
+                  <Image width="20px" height="20px" src={PolygonLogo} />
                 </span>
                 MATIC{" "}
               </h4>
-              <p className='mt-2 font-CircularMedium text-2xl'>
+              <p className="mt-2 font-CircularMedium text-2xl">
                 {earningsPoly.toFixed(5)}...
               </p>
             </div>
-            <div className='text-center lg:text-left m-5'>
-              <h4 className='font-CircularMedium '>
-                <span className='text-xs mr-2 align-bottom '>
-                  <Image width='20px' height='20px' src={FantomLogo} />
+            <div className="text-center lg:text-left m-5">
+              <h4 className="font-CircularMedium ">
+                <span className="text-xs mr-2 align-bottom ">
+                  <Image width="20px" height="20px" src={FantomLogo} />
                 </span>
                 FTM{" "}
               </h4>
-              <p className='mt-2 font-CircularMedium text-2xl'>
+              <p className="mt-2 font-CircularMedium text-2xl">
                 {earningsFantom.toFixed(5)}...
               </p>
             </div>
@@ -191,7 +191,7 @@ export default function Dashboard({}) {
               write?.();
             }}
           >
-            <div className='text-center mb-4'>
+            <div className="text-center mb-4">
               <button
                 disabled={
                   !write ||
@@ -200,21 +200,21 @@ export default function Dashboard({}) {
                   currentChainEarnings === 0 ||
                   address !== userETH
                 }
-                className=' font-CircularMedium bg-yellow-300 rounded-full mt-3 py-3 h-[50px]  w-72 text-center disabled:bg-gray-200 md:max-w-xs md:mx-auto disabled:hover:scale-100 hover:scale-105 transition-all dark:text-black'
+                className=" font-CircularMedium bg-yellow-300 rounded-full mt-3 py-3 h-[50px]  w-72 text-center disabled:bg-gray-200 md:max-w-xs md:mx-auto disabled:hover:scale-100 hover:scale-105 transition-all dark:text-black"
               >
                 {isLoading && (
                   <>
-                    <div role='status'>
-                      <GiFullPizza className='inline text-2xl animate-spin -mt-1 mr-3 text-orange-600' />
-                      <span className=''>Waiting for wallet...</span>
+                    <div role="status">
+                      <GiFullPizza className="inline text-2xl animate-spin -mt-1 mr-3 text-orange-600" />
+                      <span className="">Waiting for wallet...</span>
                     </div>
                   </>
                 )}
                 {txLoading && (
                   <>
-                    <div role='status'>
-                      <GiFullPizza className='inline text-2xl animate-spin -mt-1 mr-3 text-orange-600' />
-                      <span className=''>Withdrawing</span>
+                    <div role="status">
+                      <GiFullPizza className="inline text-2xl animate-spin -mt-1 mr-3 text-orange-600" />
+                      <span className="">Withdrawing</span>
                     </div>
                   </>
                 )}
@@ -224,8 +224,8 @@ export default function Dashboard({}) {
           </form>
 
           {isConnected && (
-            <div className='mb-4 text-center'>
-              <p className='font-CircularMedium text-xs mx-auto  w-[300px]'>
+            <div className="mb-4 text-center">
+              <p className="font-CircularMedium text-xs mx-auto  w-[300px]">
                 {currentChainEarnings === 0 ? (
                   `You have no tips on ${chain.name}. Switch chains or share your link to get more tips!`
                 ) : (
@@ -239,7 +239,7 @@ export default function Dashboard({}) {
             </div>
           )}
 
-          <div className='mb-8'>
+          <div className="mb-8">
             <ConnectButton />
           </div>
 
@@ -247,7 +247,7 @@ export default function Dashboard({}) {
 
           {/* <div className='mt-10 m-5'>
             <p className='text-gray-500'>
-              getme.pizza is currently invite only...
+              Pizza_Park.pizza is currently invite only...
             </p>
 
             <form className='mt-4'>

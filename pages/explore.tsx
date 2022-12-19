@@ -27,44 +27,44 @@ export default function Explore(props) {
   return (
     <>
       <Head>
-        <title>GetMe.Pizza | Explore</title>
-        <meta name='title' content='GetMe.Pizza | Explore' />
+        <title>Pizza_Park.Pizza | Explore</title>
+        <meta name="title" content="Pizza_Park.Pizza | Explore" />
         <meta
-          name='description'
-          content='Explore the latest creators and tip them some crypto so they can work without worrying about lunch!'
+          name="description"
+          content="Explore the latest creators and tip them some crypto so they can work without worrying about lunch!"
         />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://getme.pizza/' />
-        <meta property='og:title' content='GetMe.Pizza | Explore' />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://Pizza_Park.pizza/" />
+        <meta property="og:title" content="Pizza_Park.Pizza | Explore" />
         <meta
-          property='og:description'
-          content='Explore the latest creators and tip them some crypto so they can work without worrying about lunch!'
+          property="og:description"
+          content="Explore the latest creators and tip them some crypto so they can work without worrying about lunch!"
         />
-        <meta property='og:image' content='https://i.imgur.com/MoVLaGP.png' />
-        <meta property='twitter:card' content='summary_large_image' />
-        <meta property='twitter:url' content='https://getme.pizza/' />
-        <meta property='twitter:title' content='GetMe.Pizza | Explore' />
+        <meta property="og:image" content="https://i.imgur.com/MoVLaGP.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://Pizza_Park.pizza/" />
+        <meta property="twitter:title" content="Pizza_Park.Pizza | Explore" />
         <meta
-          property='twitter:description'
-          content='Explore the latest creators and tip them some crypto so they can work without worrying about lunch!'
+          property="twitter:description"
+          content="Explore the latest creators and tip them some crypto so they can work without worrying about lunch!"
         />
         <meta
-          property='twitter:image'
-          content='https://i.imgur.com/MoVLaGP.png'
+          property="twitter:image"
+          content="https://i.imgur.com/MoVLaGP.png"
         />
       </Head>
-      <main className='min-h-[calc(100vh-163px)] max-w-[1100px] mx-auto mt-12 flex flex-col justify-between'>
-        <section className='px-3 md:px-20  dark:text-slate-50 '>
-          <h1 className='font-CircularMedium'>LATEST CREATORS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+      <main className="min-h-[calc(100vh-163px)] max-w-[1100px] mx-auto mt-12 flex flex-col justify-between">
+        <section className="px-3 md:px-20  dark:text-slate-50 ">
+          <h1 className="font-CircularMedium">LATEST CREATORS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <UsersFeed users={latestUsers} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST CONTENT CREATORS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST CONTENT CREATORS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList
                 users={latestUsers}
                 SelectedFeed={"Content Creator"}
@@ -72,51 +72,51 @@ export default function Explore(props) {
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST DEVELOPERS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST DEVELOPERS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Developer"} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST COMMUNITIES</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST COMMUNITIES</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Community"} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST GAMERS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST GAMERS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Gamer"} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST ARTISTS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST ARTISTS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Artist"} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST WRITERS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST WRITERS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Writer"} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST MUSICIANS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST MUSICIANS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Musician"} />
             </ul>
           </nav>
 
-          <h1 className='font-CircularMedium'>LATEST OTHERS</h1>
-          <nav className='pt-1 mb-5'>
-            <ul className='flex items-center overflow-x-auto scrollbar-hide  scroll-auto'>
+          <h1 className="font-CircularMedium">LATEST OTHERS</h1>
+          <nav className="pt-1 mb-5">
+            <ul className="flex items-center overflow-x-auto scrollbar-hide  scroll-auto">
               <ExploreList users={latestUsers} SelectedFeed={"Other"} />
             </ul>
           </nav>

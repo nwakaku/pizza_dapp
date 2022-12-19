@@ -20,13 +20,13 @@ export default function NavBar(props) {
   const darkMode = props.darkMode;
 
   return (
-    <main className='bg-none   md:pt-5 font-CircularMedium tracking-wide'>
-      <section className='px-3 py-4 md:bg-white md:dark:bg-zinc-800   md:px-5  lg:max-w-4xl lg:mx-auto rounded-full '>
-        <nav className='flex justify-between   '>
+    <main className="bg-none   md:pt-5 font-CircularMedium tracking-wide">
+      <section className="px-3 py-4 md:bg-white md:dark:bg-zinc-800   md:px-5  lg:max-w-4xl lg:mx-auto rounded-full ">
+        <nav className="flex justify-between   ">
           {username ? (
-            <div className='pt-2'>
+            <div className="pt-2">
               <Link href={"/"}>
-                <a className='text-4xl md:pl-1 cursor-pointer self-center'>
+                <a className="text-4xl md:pl-1 cursor-pointer self-center">
                   🍕
                 </a>
               </Link>
@@ -34,24 +34,24 @@ export default function NavBar(props) {
           ) : (
             <div>
               <Link href={"/"}>
-                <a className='text-2xl md:pl-4 cursor-pointer dark:text-white lg:hidden'>
+                <a className="text-2xl md:pl-4 cursor-pointer dark:text-white lg:hidden">
                   🍕
                 </a>
               </Link>
 
               <Link href={"/"}>
-                <a className='text-2xl md:pl-4 cursor-pointer dark:text-white hidden lg:block'>
-                  getme.🍕
+                <a className="text-2xl md:pl-4 cursor-pointer dark:text-white hidden lg:block">
+                  Pizza_Park.🍕
                 </a>
               </Link>
             </div>
           )}
 
-          <ul className='flex items-center '>
+          <ul className="flex items-center ">
             {username && (
-              <div className='bg-white  flex rounded-full p-2 dark:bg-zinc-800'>
+              <div className="bg-white  flex rounded-full p-2 dark:bg-zinc-800">
                 <div
-                  className='p-2 text-gray-700 rounded-md outline-none dark:text-slate-50'
+                  className="p-2 text-gray-700 rounded-md outline-none dark:text-slate-50"
                   onClick={() => setMovbileNavOpen(!mobileNavOpen)}
                 >
                   {mobileNavOpen ? (
@@ -59,16 +59,16 @@ export default function NavBar(props) {
                       <AiOutlineClose />
                     </>
                   ) : (
-                    <div className='lg:hidden'>
+                    <div className="lg:hidden">
                       <FaHamburger />
                     </div>
                   )}
                 </div>
-                <li className='mx-2 '>
+                <li className="mx-2 ">
                   <Link href={`/dashboard`}>
                     <img
-                      referrerPolicy='no-referrer'
-                      className='rounded-full cursor-pointer max-h-[35px]'
+                      referrerPolicy="no-referrer"
+                      className="rounded-full cursor-pointer max-h-[35px]"
                       width={"35px"}
                       height={"35px"}
                       src={userPhoto}
@@ -76,7 +76,7 @@ export default function NavBar(props) {
                   </Link>
                 </li>
                 <button
-                  className='ml-2 p-2 text-gray-700 dark:text-white rounded-md outline-none focus:border-gray-400 hover:scale-105 transition-all'
+                  className="ml-2 p-2 text-gray-700 dark:text-white rounded-md outline-none focus:border-gray-400 hover:scale-105 transition-all"
                   onClick={() => changeMode(!darkMode)}
                 >
                   {darkMode ? <FiMoon /> : <FiSun />}
@@ -88,7 +88,7 @@ export default function NavBar(props) {
                     }`}
                   >
                     <button
-                      className='absolute right-0 p-2 text-gray-700 dark:text-slate-50 rounded-md outline-none focus:border-gray-400'
+                      className="absolute right-0 p-2 text-gray-700 dark:text-slate-50 rounded-md outline-none focus:border-gray-400"
                       onClick={() => setMovbileNavOpen(!mobileNavOpen)}
                     >
                       <AiOutlineClose />
@@ -102,50 +102,50 @@ export default function NavBar(props) {
 
             {!username && (
               <>
-                <li className='mx-2  text-sm hover:scale-105 transition-all'>
+                <li className="mx-2  text-sm hover:scale-105 transition-all">
                   <Link href={"/feed"}>
-                    <a className=' dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block'>
+                    <a className=" dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block">
                       Latest Posts
                     </a>
                   </Link>
                 </li>
-                <li className='mx-2  text-sm hover:scale-105 transition-all'>
+                <li className="mx-2  text-sm hover:scale-105 transition-all">
                   <Link href={"/explore"}>
-                    <a className=' dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block'>
+                    <a className=" dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block">
                       Explore
                     </a>
                   </Link>
                 </li>
-                <li className='mx-2  text-sm hover:scale-105 transition-all'>
+                <li className="mx-2  text-sm hover:scale-105 transition-all">
                   <Link href={"/faq"}>
-                    <a className=' dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block'>
+                    <a className=" dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block">
                       F.A.Q.
                     </a>
                   </Link>
                 </li>
-                <li className='mx-2  text-sm hover:scale-105 transition-all'>
+                <li className="mx-2  text-sm hover:scale-105 transition-all">
                   <Link href={"/about"}>
-                    <a className=' dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block'>
+                    <a className=" dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer hidden md:block">
                       About
                     </a>
                   </Link>
                 </li>
-                <li className='mr-2 hover:scale-105 transition-all md:mx-2'>
+                <li className="mr-2 hover:scale-105 transition-all md:mx-2">
                   <Link href={"/enter"}>
-                    <a className=' dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer '>
+                    <a className=" dark:text-white rounded-full text-sm px-4  py-2 cursor-pointer ">
                       Sign in
                     </a>
                   </Link>
                 </li>
-                <li className='hover:scale-105 transition-all md:mx-2'>
+                <li className="hover:scale-105 transition-all md:mx-2">
                   <Link href={"/enter"}>
-                    <a className='bg-yellow-300 rounded-full text-sm px-4  py-2 cursor-pointer dark:text-black'>
+                    <a className="bg-yellow-300 rounded-full text-sm px-4  py-2 cursor-pointer dark:text-black">
                       Sign up
                     </a>
                   </Link>
                 </li>
                 <button
-                  className='ml-2 p-2 text-gray-700 dark:text-white rounded-md outline-none focus:border-gray-400 hover:scale-105 transition-all'
+                  className="ml-2 p-2 text-gray-700 dark:text-white rounded-md outline-none focus:border-gray-400 hover:scale-105 transition-all"
                   onClick={() => changeMode(!darkMode)}
                 >
                   {darkMode ? <FiMoon /> : <FiSun />}

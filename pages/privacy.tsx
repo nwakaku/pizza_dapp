@@ -6,44 +6,44 @@ export default function Custom404() {
   return (
     <>
       <Head>
-        <title>GetMe.Pizza | Privacy</title>
-        <meta name='title' content='GetMe.Pizza | Privacy' />
+        <title>Pizza_Park.Pizza | Privacy</title>
+        <meta name="title" content="Pizza_Park.Pizza | Privacy" />
         <meta
-          name='description'
-          content='Start your account now and get tipped in your favorite cryptocurrencies! ... It all started with the pizza, so get tipped the crypto way... '
+          name="description"
+          content="Start your account now and get tipped in your favorite cryptocurrencies! ... It all started with the pizza, so get tipped the crypto way... "
         />
-        <meta property='og:type' content='website' />
-        <meta property='og:url' content='https://getme.pizza/' />
-        <meta property='og:title' content='GetMe.Pizza | Privacy' />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://Pizza_Park.pizza/" />
+        <meta property="og:title" content="Pizza_Park.Pizza | Privacy" />
         <meta
-          property='og:description'
-          content='Start your account now and get tipped in your favorite cryptocurrencies! ... It all started with the pizza, so get tipped the crypto way... '
+          property="og:description"
+          content="Start your account now and get tipped in your favorite cryptocurrencies! ... It all started with the pizza, so get tipped the crypto way... "
         />
-        <meta property='og:image' content='https://i.imgur.com/nFZLBWm.png' />
-        <meta property='twitter:card' content='summary_large_image' />
-        <meta property='twitter:url' content='https://getme.pizza/' />
-        <meta property='twitter:title' content='GetMe.Pizza | Privacy' />
+        <meta property="og:image" content="https://i.imgur.com/nFZLBWm.png" />
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://Pizza_Park.pizza/" />
+        <meta property="twitter:title" content="Pizza_Park.Pizza | Privacy" />
         <meta
-          property='twitter:description'
-          content='Start your account now and get tipped in your favorite cryptocurrencies! ... It all started with the pizza, so get tipped the crypto way... '
+          property="twitter:description"
+          content="Start your account now and get tipped in your favorite cryptocurrencies! ... It all started with the pizza, so get tipped the crypto way... "
         />
         <meta
-          property='twitter:image'
-          content='https://i.imgur.com/nFZLBWm.png'
+          property="twitter:image"
+          content="https://i.imgur.com/nFZLBWm.png"
         />
       </Head>
-      <main className='flex flex-col justify-between '>
-        <section className='px-3 py-6 mb-6 md:px-20 lg:max-w-5xl lg:mx-auto'>
+      <main className="flex flex-col justify-between ">
+        <section className="px-3 py-6 mb-6 md:px-20 lg:max-w-5xl lg:mx-auto">
           <div>
-            <h1 className='text-4xl font-bold text-center px-2 py-2 leading-10 md:text-4xl md:max-w-lg mx-auto lg:max-w-4xl lg:text-6xl lg:pt-14 '>
+            <h1 className="text-4xl font-bold text-center px-2 py-2 leading-10 md:text-4xl md:max-w-lg mx-auto lg:max-w-4xl lg:text-6xl lg:pt-14 ">
               Privacy Policy
             </h1>
           </div>
         </section>
         <hr />
-        <section className='lg:max-w-4xl lg:mx-auto  text-gray-800 dark:text-slate-300'>
-          <div className='mx-6 mt-8'>
-            <p className=''>
+        <section className="lg:max-w-4xl lg:mx-auto  text-gray-800 dark:text-slate-300">
+          <div className="mx-6 mt-8">
+            <p className="">
               Get Me Pizza is a platform for creators to accept support from
               their audience and share exclusive content. At Get Me Pizza, your
               privacy is important to us, and we want you to feel confident that
@@ -53,8 +53,8 @@ export default function Custom404() {
               respect your privacy regarding any information we may collect
               while operating our website.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Website Visitors</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Website Visitors</h1>
+            <p className="">
               Like most website operators, Get Me Pizza collects
               non-personally-identifying information of the sort that web
               browsers and servers typically make available, such as the browser
@@ -67,16 +67,16 @@ export default function Custom404() {
               of its website. Get Me Pizza also collects potentially
               personally-identifying information like Internet Protocol (IP)
               addresses, email, and EVM addresses for logged in users and for
-              users making payments on GetMe.Pizza. Get Me Pizza only discloses
-              logged in user and commenter IP addresses under the same
+              users making payments on Pizza_Park.Pizza. Get Me Pizza only
+              discloses logged in user and commenter IP addresses under the same
               circumstances that it uses and discloses personally-identifying
               information as described below, except that payee IP addresses and
               email addresses are visible and disclosed to the administrators of
               Get Me Pizza and payment processing is publicly available on the
               blockchain.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Payments</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Payments</h1>
+            <p className="">
               To make a payment to a creator on Get Me Pizza, you have to
               connect your wallet. We use Wagmi SDK which provides us with a
               token that represents your wallet, and allows us to suggest a
@@ -85,10 +85,10 @@ export default function Custom404() {
               rewards you receive and how often you support them are all
               publicly available on the blockchain.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>
+            <h1 className="mt-8 mb-2  font-bold text-xl">
               Gathering of Personally-Identifying Information
             </h1>
-            <p className=''>
+            <p className="">
               Certain visitors to Get Me Pizza&apos;s websites choose to
               interact with Get Me Pizza in ways that require Get Me Pizza to
               gather personally-identifying information. The amount and type of
@@ -111,20 +111,20 @@ export default function Custom404() {
               You can request to delete your personal data by emailing
               elonsdev@protonmail.me.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>
+            <h1 className="mt-8 mb-2  font-bold text-xl">
               Aggregated Statistics
             </h1>
-            <p className=''>
+            <p className="">
               Get Me Pizza may collect statistics about the behavior of visitors
               to its websites. Get Me Pizza may display this information
               publicly or provide it to others. However, Get Me Pizza does not
               disclose personally-identifying information other than as
               described below.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>
+            <h1 className="mt-8 mb-2  font-bold text-xl">
               Protection of Certain Personally-Identifying Information
             </h1>
-            <p className=''>
+            <p className="">
               Get Me Pizza discloses potentially personally-identifying and
               personally-identifying information only to those of its employees,
               contractors and affiliated organizations that (i) need to know
@@ -156,8 +156,8 @@ export default function Custom404() {
               alteration or destruction of potentially personally-identifying
               and personally-identifying information.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Account deletion</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Account deletion</h1>
+            <p className="">
               You may stop using our Service, by contacting Get Me Pizza at
               elonsdev@protonmail.me, and requesting account deletion. We may
               retain certain information as required by law or as necessary for
@@ -169,8 +169,8 @@ export default function Custom404() {
               request to delete your personal data by emailing us at
               elonsdev@protonmail.me.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Cookies</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Cookies</h1>
+            <p className="">
               A cookie is a string of information that a website stores on a
               visitor&apos;s computer, and that the visitor&apos;s browser
               provides to the website each time the visitor returns. Get Me
@@ -209,8 +209,8 @@ export default function Custom404() {
               Get Me Pizza&apos;s websites may not function properly without the
               aid of cookies.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Business Transfers</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Business Transfers</h1>
+            <p className="">
               If Get Me Pizza, or substantially all of its assets, were
               acquired, or in the unlikely event that Get Me Pizza goes out of
               business or enters bankruptcy, user information would be one of
@@ -219,18 +219,18 @@ export default function Custom404() {
               of Get Me Pizza may continue to use your personal information as
               set forth in this policy.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Ads</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Ads</h1>
+            <p className="">
               We do not run any external advertisements on Get Me Pizza.
               However, we use ad networks such as Twitter Ads to collect
               retargeting information to compile information about our users.
               This Privacy Policy covers the use of cookies by Get Me Pizza and
               does not cover the use of cookies by any advertisers.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>
+            <h1 className="mt-8 mb-2  font-bold text-xl">
               International Users
             </h1>
-            <p className=''>
+            <p className="">
               Get Me Pizza is based in South Africa with servers in the United
               States. If you are accessing our Services from any other regions
               with laws governing data collection and use, please note that your
@@ -247,35 +247,35 @@ export default function Custom404() {
               information to the United States and processing globally in
               accordance with this Privacy Policy.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>
+            <h1 className="mt-8 mb-2  font-bold text-xl">
               Privacy Policy Changes
             </h1>
-            <p className=''>
+            <p className="">
               Although most changes are likely to be minor, Get Me Pizza may
               change its Privacy Policy from time to time, and in Get Me
               Pizza&apos;s sole discretion. Get Me Pizza encourages visitors to
               frequently check this page for any changes to its Privacy Policy.
-              If you have a GetMe.pizza account, you might also receive an alert
-              informing you of these changes. Your continued use of this site
-              after any change in this Privacy Policy will constitute your
+              If you have a Pizza_Park.pizza account, you might also receive an
+              alert informing you of these changes. Your continued use of this
+              site after any change in this Privacy Policy will constitute your
               acceptance of such change.
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>
+            <h1 className="mt-8 mb-2  font-bold text-xl">
               Other Terms and Conditions
             </h1>
-            <p className=''>
+            <p className="">
               Your access to and use of the Get Me Pizza is subject to any
               additional terms applicable to such Services that may be posted on
               the Terms from time to time, including without limitation, Get Me
               Pizza&apos;s Terms of Use available at
-              https://www.GetMe.pizza/terms. By agreeing to our privacy policy
-              you are also agreeing to the Google&apos;s privacy policy for the
-              services which we use like Google Firebase, Auth Sign In,
+              https://www.Pizza_Park.pizza/terms. By agreeing to our privacy
+              policy you are also agreeing to the Google&apos;s privacy policy
+              for the services which we use like Google Firebase, Auth Sign In,
               Recaptcha, Analytics, etc. which can be found here:
               https://policies.google.com/privacy?hl=en-US
             </p>
-            <h1 className='mt-8 mb-2  font-bold text-xl'>Contact Us</h1>
-            <p className=''>
+            <h1 className="mt-8 mb-2  font-bold text-xl">Contact Us</h1>
+            <p className="">
               Please feel free to contact us if you have any questions about Get
               Me Pizza&apos;s Privacy Policy or the information practices. You
               may contact us as follows: You may send an email to

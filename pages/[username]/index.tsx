@@ -40,39 +40,39 @@ export default function UserProfilePage({ user, posts }) {
     <>
       <Head>
         <title>{user.displayName}</title>
-        <meta name='title' content={user.displayName} />
-        <meta name='description' content={user.about.substring(0, 159)} />
+        <meta name="title" content={user.displayName} />
+        <meta name="description" content={user.about.substring(0, 159)} />
 
-        <meta property='og:type' content='website' />
+        <meta property="og:type" content="website" />
         <meta
-          property='og:url'
-          content={`https://www.getme.pizza/${user.username}}`}
+          property="og:url"
+          content={`https://www.Pizza_Park.pizza/${user.username}}`}
         />
-        <meta property='og:title' content={user.displayName} />
+        <meta property="og:title" content={user.displayName} />
         <meta
-          property='og:description'
+          property="og:description"
           content={user.about.substring(0, 159)}
         />
         <meta
-          property='og:image'
+          property="og:image"
           content={`https://getmepizza-dapp.vercel.app/api/ogpages?name=${user.displayName}&link=${user.username}&photo=${user.photoURL}`}
         />
-        <meta property='twitter:card' content='summary_large_image' />
+        <meta property="twitter:card" content="summary_large_image" />
         <meta
-          property='twitter:url'
-          content={`https://www.getme.pizza/${user.username}}`}
+          property="twitter:url"
+          content={`https://www.Pizza_Park.pizza/${user.username}}`}
         />
-        <meta property='twitter:title' content={user.displayName} />
+        <meta property="twitter:title" content={user.displayName} />
         <meta
-          property='twitter:description'
+          property="twitter:description"
           content={user.about.substring(0, 159)}
         />
         <meta
-          property='twitter:image'
+          property="twitter:image"
           content={`https://getmepizza-dapp.vercel.app/api/ogpages?name=${user.displayName}&link=${user.username}&photo=${user.photoURL}`}
         />
       </Head>
-      <main className='min-h-[calc(100vh-163px)] flex flex-col justify-between'>
+      <main className="min-h-[calc(100vh-163px)] flex flex-col justify-between">
         <UserProfile user={user} posts={posts} />
 
         <PoweredBy />
